@@ -7,19 +7,25 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
 
-public class MainActivity2 extends Activity {
 
+public class MainActivity2 extends Activity
+{
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity2);
 
+        EditText editText1 = (EditText) findViewById(R.id.editText);
+
+
         Bundle reco=getIntent().getExtras();
-        TextView t= (TextView) findViewById(R.id.texto);
+        TextView t= (TextView) findViewById(R.id.text);
         t.setText(reco.getString("nombre"));
         Button btnhola = (Button)findViewById(R.id.btnhola);
         Button btnadios = (Button)findViewById(R.id.btnadios);
@@ -40,6 +46,9 @@ public class MainActivity2 extends Activity {
                 setResult(RESULT_OK, i);
                 finish();
             }});
+
+        t.setText(reco.getString("nombre"));
+        editText1.setText(reco.getString("nombre"));
     }
 
 
