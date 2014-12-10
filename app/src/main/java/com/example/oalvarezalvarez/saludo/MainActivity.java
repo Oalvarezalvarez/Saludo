@@ -25,8 +25,8 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v)
             {
-                
 
+                //Haciendo commit
                 Intent intento = new Intent(MainActivity.this,MainActivity2.class);
                 Bundle reci=new Bundle();
                 reci.putString("nombre","damian");
