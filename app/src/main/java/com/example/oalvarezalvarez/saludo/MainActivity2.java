@@ -22,13 +22,12 @@ public class MainActivity2 extends Activity
         setContentView(R.layout.activity_main_activity2);
 
         EditText editText1 = (EditText) findViewById(R.id.editText);
-
-
-        Bundle reco=getIntent().getExtras();
         TextView t= (TextView) findViewById(R.id.text);
-        t.setText(reco.getString("nombre"));
         Button btnhola = (Button)findViewById(R.id.btnhola);
         Button btnadios = (Button)findViewById(R.id.btnadios);
+
+        Bundle reco=getIntent().getExtras();
+
         btnhola.setOnClickListener(new View.OnClickListener ()
         {
             @Override
@@ -49,7 +48,7 @@ public class MainActivity2 extends Activity
 
         t.setText(reco.getString("nombre"));
         editText1.setText(reco.getString("nombre"));
-        
+
     }
 
 
