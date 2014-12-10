@@ -27,7 +27,6 @@ public class MainActivity2 extends Activity
         Button btnadios = (Button)findViewById(R.id.btnadios);
 
         Bundle reco=getIntent().getExtras();
-
         btnhola.setOnClickListener(new View.OnClickListener ()
         {
             @Override
