@@ -49,6 +49,7 @@ public class MainActivity2 extends Activity
 
         t.setText(reco.getString("nombre"));
         editText1.setText(reco.getString("nombre"));
+        
     }
 
 
